@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:islamiproject/home/quran/sura_details.dart';
+import 'package:islamiproject/my-theme.dart';
 
-import 'home_screen.dart';
+import 'home/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      routes:{ HomeScreen.routeName:(_)=> HomeScreen(), },
+      theme:MyTheme.lighttheme,
+
+      routes:{ HomeScreen.routeName:(_)=> HomeScreen(),
+        SuraDetailsScreen.routeName:(_)=> SuraDetailsScreen()},
       initialRoute:HomeScreen.routeName,
 
 
