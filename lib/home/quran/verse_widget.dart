@@ -14,7 +14,9 @@ class VerseWidget extends StatelessWidget {
       return Container(
         padding: EdgeInsets.symmetric(vertical: 6),
         alignment: Alignment.center,
-        child: Text('$content{${index+1}}',
+        child: Text('$content ${{index+1} }',
+    textDirection: TextDirection.rtl,
+            textAlign: TextAlign.center,
     style: Theme.of(context).textTheme.bodyText1),
 
       );

@@ -44,7 +44,6 @@ class QuranTab extends StatelessWidget {
 
             separatorBuilder: (context, index) {
             return Container(
-
               margin: EdgeInsets.symmetric(horizontal: 64),
               color: Theme.of(context).primaryColor,
               width: double.infinity,

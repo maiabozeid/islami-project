@@ -2,6 +2,7 @@ import 'dart:core';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:islamiproject/home/hadeth/hadeth-name-widget.dart';
 
 class HadethTab extends StatefulWidget {
 
@@ -16,10 +17,21 @@ class _HadethTabState extends State<HadethTab> {
   Widget build(BuildContext context) {
     if(hadethList.isEmpty)
     readHadethFile();
-    return ListView.builder(itemBuilder: (_,index){
+    return hadethList.isEmpty?
+        Center(child: CircularProgressIndicator()):
 
-return Text(hadethList[index].title);
+    ListView.separated(itemBuilder: (_,index){
+
+return HadethNameWidget(hadethList[index]);
     },itemCount: hadethList.length,
+      separatorBuilder: (context, index) {
+        return Container(
+          margin: EdgeInsets.symmetric(horizontal: 64),
+          color: Theme.of(context).primaryColor,
+          width: double.infinity,
+          height: 2,
+        );
+      } ,
     );
   }
 
