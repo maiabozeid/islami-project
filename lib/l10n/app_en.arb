@@ -8,6 +8,8 @@
   "theme" : "Theme",
   "settings_title": "Settings",
   "language": "Language",
+  "lang":"English",
   "light": "Light",
-  "dark": "Dark"
+  "dark": "Dark",
+  "noOfTasbeh" : "No Of Tasbeh"
 }

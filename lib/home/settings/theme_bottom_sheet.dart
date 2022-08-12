@@ -22,8 +22,8 @@ class _ThemeBottomSheetState extends State<ThemeBottomSheet> {
 
            settingsProvider.changeTheme(ThemeMode.light);
         }, child:settingsProvider.isDarkMode()?
-    getSelectedItem( AppLocalizations.of(context)!.light):
-    getUnSelectedItem( AppLocalizations.of(context)!.light)),
+    getUnSelectedItem( AppLocalizations.of(context)!.light):
+    getSelectedItem( AppLocalizations.of(context)!.light)),
 
           SizedBox(
             height: 12,

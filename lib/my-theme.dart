@@ -51,7 +51,7 @@ class MyTheme {
 
   static final ThemeData darktheme = ThemeData(
      backgroundColor: colorDarkBlue,
-      primaryColor: colorYellow,
+      primaryColor: colorGold,
       scaffoldBackgroundColor: Colors.transparent,
 
       bottomSheetTheme: BottomSheetThemeData(
@@ -77,17 +77,17 @@ class MyTheme {
 
 
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
-        backgroundColor: colorGold,
+        backgroundColor: colorDarkBlue,
         selectedIconTheme: IconThemeData(
-          color: colorYellow,
+          color: colorGold,
         ),
         unselectedIconTheme: IconThemeData(
           color: Colors.white,
         ),
         selectedLabelStyle: TextStyle(
-          color: colorYellow,
+          color: colorGold,
         ),
-        selectedItemColor: colorYellow,
+        selectedItemColor: colorGold,
         unselectedItemColor: Colors.white,
       ));
 }

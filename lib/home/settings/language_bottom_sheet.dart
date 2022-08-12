@@ -19,7 +19,7 @@ class _LanguageBottomSheetState extends State<LanguageBottomSheet> {
           InkWell(
             onTap: (){
           settingsProvider.changeLanguage('en');
-        }, child: settingsProvider.currentLang == 'en'?
+        }, child: settingsProvider.currentLang == 'en '?
               getSelectedItem('English'):
           getUnSelectedItem('English')),
           SizedBox(

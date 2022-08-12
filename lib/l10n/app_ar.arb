@@ -6,7 +6,9 @@
   "radio_title" : "الاذاعه",
   "settings_title": "الاعدادت",
   "language": "اللغه",
+  "lang":"العربيه",
   "light": "نهاري",
   "dark": "ليلي",
-  "theme": "المظهر"
+  "theme": "المظهر",
+  "noOfTasbeh" : "عدد التسبيحات"
 }
