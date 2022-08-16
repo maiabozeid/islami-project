@@ -16,7 +16,7 @@ void main() {
   runApp(ChangeNotifierProvider<SettingsProvider>(
     create: (buildContext){
       return SettingsProvider();},
-
+//run app
       child: MyApp()));
 }
 class MyApp extends StatelessWidget {
